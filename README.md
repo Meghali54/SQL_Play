@@ -1,16 +1,9 @@
 # SQL Playground
 
-**Try the Demo:** [https://sql-playground.udaysagar.in/](https://sql-playground.udaysagar.in/)
 
 ## Overview
 
 SQL Playground is a high-performance, in-browser SQL execution tool built with [Next.js](https://nextjs.org/). Designed to efficiently handle millions of rows, it leverages WebAssembly-based [SQL.js](https://sql.js.org/) for query execution and [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) for data persistence. Optimized to prevent unnecessary re-renders, it is designed for seamless future integration with any backend.
-
-### Application Dashboard
-
-<img src="docs/dashboard.png" alt="SQL Playground Dashboard" width="800">
-
-## Architecture Overview
 
 ### Core Technologies
 
@@ -42,10 +35,6 @@ SQL Playground is a high-performance, in-browser SQL execution tool built with [
    - Local Storage retains tab states.
    - SQL.js maintains in-memory tables, resetting upon page reload.
    - React Query manages state, caching, and background updates.
-
-### System Architecture Diagram
-
-<img src="docs/architecture.png" alt="SQL Playground Architecture" width="800">
 
 ## Key Features
 
@@ -89,28 +78,3 @@ src/
 ├── styles/       # Global and module-specific styles
 └── types/        # TypeScript type definitions
 ```
-
-## Tools Used for Performance Measurement
-
-- **[React Scan](https://react-scan.com/)**: Analyzes component rendering performance.
-- **[Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)**: Evaluates accessibility, performance, and SEO.
-- **[GTmetrix](https://gtmetrix.com/)**: Measures load times and best practices.
-- **[Chrome DevTools](https://developer.chrome.com/docs/devtools/)**: Identifies and debugs performance bottlenecks.
-
-## Performance Benchmarks
-
-| Metric                         | Value |
-| ------------------------------ | ----- |
-| First Contentful Paint (FCP)   | 0.2s  |
-| Largest Contentful Paint (LCP) | 0.6s  |
-| Total Blocking Time (TBT)      | 0ms   |
-| Cumulative Layout Shift (CLS)  | 0     |
-| Speed Index                    | 0.2s  |
-| Performance Score              | 100   |
-| Accessibility Score            | 100   |
-| Best Practices Score           | 100   |
-| SEO Score                      | 100   |
-
-### Performance Metrics Visualization
-
-<img src="docs/performance.png" alt="SQL Playground Performance Benchmarks" width="400">
